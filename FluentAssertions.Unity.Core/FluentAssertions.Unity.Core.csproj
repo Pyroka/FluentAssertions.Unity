@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{320AE49F-1969-41B4-B527-DE917A678CAE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FluentAssertions.Unity.Core</RootNamespace>
+    <AssemblyName>FluentAssertions.Unity.Core</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssertionExtensions.Actions.cs" />
+    <Compile Include="AssertionExtensions.cs" />
+    <Compile Include="Events\EventHandlerFactory.cs" />
+    <Compile Include="Events\EventSourceExtensions.cs" />
+    <Compile Include="Execution\FallbackTestFramework.cs" />
+    <Compile Include="Execution\ITestFramework.cs" />
+    <Compile Include="Execution\LateBoundTestFramework.cs" />
+    <Compile Include="Formatting\XAttributeValueFormatter.cs" />
+    <Compile Include="Formatting\XDocumentValueFormatter.cs" />
+    <Compile Include="Formatting\XElementValueFormatter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Specialized\AssemblyAssertions.cs" />
+    <Compile Include="Specialized\ExecutionTimeAssertions.cs" />
+    <Compile Include="Xml\XAttributeAssertions.cs" />
+    <Compile Include="Xml\XDocumentAssertions.cs" />
+    <Compile Include="Xml\XElementAssertions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FluentAssertions.Unity\FluentAssertions.Unity.csproj">
+      <Project>{66b44e2c-32ef-4d24-b074-54dfbfee23fe}</Project>
+      <Name>FluentAssertions.Unity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentAssertions.Unity", "FluentAssertions.Unity\FluentAssertions.Unity.csproj", "{66B44E2C-32EF-4D24-B074-54DFBFEE23FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentAssertions.Unity.Core", "FluentAssertions.Unity.Core\FluentAssertions.Unity.Core.csproj", "{320AE49F-1969-41B4-B527-DE917A678CAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66B44E2C-32EF-4D24-B074-54DFBFEE23FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66B44E2C-32EF-4D24-B074-54DFBFEE23FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66B44E2C-32EF-4D24-B074-54DFBFEE23FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66B44E2C-32EF-4D24-B074-54DFBFEE23FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{320AE49F-1969-41B4-B527-DE917A678CAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{320AE49F-1969-41B4-B527-DE917A678CAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{320AE49F-1969-41B4-B527-DE917A678CAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{320AE49F-1969-41B4-B527-DE917A678CAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
